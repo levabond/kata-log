@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6CBAF310EEB265F9B74D70 /* Pods_kata_chalangesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB488942350DF0560DD1E1 /* Pods_kata_chalangesTests.framework */; };
+		25A12AE8257BE345008C3AD4 /* GreeterServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A12AE7257BE345008C3AD4 /* GreeterServiceTest.swift */; };
+		25ADBB26257BD81000A8B080 /* SenderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ADBB25257BD81000A8B080 /* SenderService.swift */; };
+		25C45725257BB8FB007F40C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C45724257BB8FB007F40C8 /* AppDelegate.swift */; };
+		25C45727257BB8FB007F40C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C45726257BB8FB007F40C8 /* SceneDelegate.swift */; };
+		25C45729257BB8FB007F40C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C45728257BB8FB007F40C8 /* ViewController.swift */; };
+		25C4572C257BB8FB007F40C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C4572A257BB8FB007F40C8 /* Main.storyboard */; };
+		25C4572E257BB8FE007F40C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C4572D257BB8FE007F40C8 /* Assets.xcassets */; };
+		25C45731257BB8FE007F40C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C4572F257BB8FE007F40C8 /* LaunchScreen.storyboard */; };
+		25C45747257BB8FE007F40C8 /* kata_chalangesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C45746257BB8FE007F40C8 /* kata_chalangesUITests.swift */; };
+		2DFC659571A287888F5B70A2 /* Pods_kata_chalanges_kata_chalangesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9088F5C56B783A3E3BEF22F9 /* Pods_kata_chalanges_kata_chalangesUITests.framework */; };
+		8CF3FD53A393687350B7DD7E /* Pods_kata_chalanges.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40B3B1FEE22B215292C1158 /* Pods_kata_chalanges.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25C45738257BB8FE007F40C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25C45719257BB8FB007F40C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25C45720257BB8FB007F40C8;
+			remoteInfo = "kata-chalanges";
+		};
+		25C45743257BB8FE007F40C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25C45719257BB8FB007F40C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25C45720257BB8FB007F40C8;
+			remoteInfo = "kata-chalanges";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B9138F072AA925787C81B25 /* Pods-kata-chalangesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kata-chalangesTests.release.xcconfig"; path = "Target Support Files/Pods-kata-chalangesTests/Pods-kata-chalangesTests.release.xcconfig"; sourceTree = "<group>"; };
+		2449E6EE3D4E14A4D9D5275D /* Pods-kata-chalangesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kata-chalangesTests.debug.xcconfig"; path = "Target Support Files/Pods-kata-chalangesTests/Pods-kata-chalangesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25A12AE6257BE345008C3AD4 /* kata-chalangesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kata-chalangesTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		25A12AE7257BE345008C3AD4 /* GreeterServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreeterServiceTest.swift; sourceTree = "<group>"; };
+		25ADBB25257BD81000A8B080 /* SenderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderService.swift; sourceTree = "<group>"; };
+		25C45721257BB8FB007F40C8 /* kata-chalanges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kata-chalanges.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C45724257BB8FB007F40C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25C45726257BB8FB007F40C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		25C45728257BB8FB007F40C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25C4572B257BB8FB007F40C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25C4572D257BB8FE007F40C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25C45730257BB8FE007F40C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25C45732257BB8FE007F40C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C45737257BB8FE007F40C8 /* kata-chalangesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kata-chalangesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C4573D257BB8FE007F40C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C45742257BB8FE007F40C8 /* kata-chalangesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kata-chalangesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C45746257BB8FE007F40C8 /* kata_chalangesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kata_chalangesUITests.swift; sourceTree = "<group>"; };
+		25C45748257BB8FE007F40C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D137138302BBC7FD92B0F96 /* Pods-kata-chalanges-kata-chalangesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kata-chalanges-kata-chalangesUITests.release.xcconfig"; path = "Target Support Files/Pods-kata-chalanges-kata-chalangesUITests/Pods-kata-chalanges-kata-chalangesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		515C811D989AF406CDD43C0E /* Pods-kata-chalanges.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kata-chalanges.release.xcconfig"; path = "Target Support Files/Pods-kata-chalanges/Pods-kata-chalanges.release.xcconfig"; sourceTree = "<group>"; };
+		9088F5C56B783A3E3BEF22F9 /* Pods_kata_chalanges_kata_chalangesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kata_chalanges_kata_chalangesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FB488942350DF0560DD1E1 /* Pods_kata_chalangesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kata_chalangesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40B3B1FEE22B215292C1158 /* Pods_kata_chalanges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kata_chalanges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3483DA321D147C1214CAF0 /* Pods-kata-chalanges-kata-chalangesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kata-chalanges-kata-chalangesUITests.debug.xcconfig"; path = "Target Support Files/Pods-kata-chalanges-kata-chalangesUITests/Pods-kata-chalanges-kata-chalangesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D74ECC1B9BB5F05DC4AB02A3 /* Pods-kata-chalanges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kata-chalanges.debug.xcconfig"; path = "Target Support Files/Pods-kata-chalanges/Pods-kata-chalanges.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25C4571E257BB8FB007F40C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF3FD53A393687350B7DD7E /* Pods_kata_chalanges.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C45734257BB8FE007F40C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6CBAF310EEB265F9B74D70 /* Pods_kata_chalangesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C4573F257BB8FE007F40C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFC659571A287888F5B70A2 /* Pods_kata_chalanges_kata_chalangesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FF66C59EFCD70BA72649112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D74ECC1B9BB5F05DC4AB02A3 /* Pods-kata-chalanges.debug.xcconfig */,
+				515C811D989AF406CDD43C0E /* Pods-kata-chalanges.release.xcconfig */,
+				CF3483DA321D147C1214CAF0 /* Pods-kata-chalanges-kata-chalangesUITests.debug.xcconfig */,
+				3D137138302BBC7FD92B0F96 /* Pods-kata-chalanges-kata-chalangesUITests.release.xcconfig */,
+				2449E6EE3D4E14A4D9D5275D /* Pods-kata-chalangesTests.debug.xcconfig */,
+				0B9138F072AA925787C81B25 /* Pods-kata-chalangesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		25A12AE2257BE327008C3AD4 /* Greteer */ = {
+			isa = PBXGroup;
+			children = (
+				25A12AE7257BE345008C3AD4 /* GreeterServiceTest.swift */,
+				25A12AE6257BE345008C3AD4 /* kata-chalangesTests-Bridging-Header.h */,
+			);
+			path = Greteer;
+			sourceTree = "<group>";
+		};
+		25ADBB23257BD7D100A8B080 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		25ADBB24257BD7E100A8B080 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				25ADBB25257BD81000A8B080 /* SenderService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		25C45718257BB8FB007F40C8 = {
+			isa = PBXGroup;
+			children = (
+				25C45723257BB8FB007F40C8 /* kata-chalanges */,
+				25C4573A257BB8FE007F40C8 /* kata-chalangesTests */,
+				25C45745257BB8FE007F40C8 /* kata-chalangesUITests */,
+				25C45722257BB8FB007F40C8 /* Products */,
+				0FF66C59EFCD70BA72649112 /* Pods */,
+				DAB320D53161778849735688 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		25C45722257BB8FB007F40C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25C45721257BB8FB007F40C8 /* kata-chalanges.app */,
+				25C45737257BB8FE007F40C8 /* kata-chalangesTests.xctest */,
+				25C45742257BB8FE007F40C8 /* kata-chalangesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25C45723257BB8FB007F40C8 /* kata-chalanges */ = {
+			isa = PBXGroup;
+			children = (
+				25ADBB24257BD7E100A8B080 /* Services */,
+				25ADBB23257BD7D100A8B080 /* Commons */,
+				25C4578B257BB9C1007F40C8 /* Resources */,
+				25C4578A257BB9B5007F40C8 /* Modules */,
+				25C45757257BB958007F40C8 /* App */,
+				25C45732257BB8FE007F40C8 /* Info.plist */,
+			);
+			path = "kata-chalanges";
+			sourceTree = "<group>";
+		};
+		25C4573A257BB8FE007F40C8 /* kata-chalangesTests */ = {
+			isa = PBXGroup;
+			children = (
+				25A12AE2257BE327008C3AD4 /* Greteer */,
+				25C4573D257BB8FE007F40C8 /* Info.plist */,
+			);
+			path = "kata-chalangesTests";
+			sourceTree = "<group>";
+		};
+		25C45745257BB8FE007F40C8 /* kata-chalangesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25C45746257BB8FE007F40C8 /* kata_chalangesUITests.swift */,
+				25C45748257BB8FE007F40C8 /* Info.plist */,
+			);
+			path = "kata-chalangesUITests";
+			sourceTree = "<group>";
+		};
+		25C45757257BB958007F40C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				25C45724257BB8FB007F40C8 /* AppDelegate.swift */,
+				25C45726257BB8FB007F40C8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25C4578A257BB9B5007F40C8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				25C45728257BB8FB007F40C8 /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		25C4578B257BB9C1007F40C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25C4572F257BB8FE007F40C8 /* LaunchScreen.storyboard */,
+				25C4572D257BB8FE007F40C8 /* Assets.xcassets */,
+				25C4572A257BB8FB007F40C8 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DAB320D53161778849735688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A40B3B1FEE22B215292C1158 /* Pods_kata_chalanges.framework */,
+				9088F5C56B783A3E3BEF22F9 /* Pods_kata_chalanges_kata_chalangesUITests.framework */,
+				94FB488942350DF0560DD1E1 /* Pods_kata_chalangesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25C45720257BB8FB007F40C8 /* kata-chalanges */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C4574B257BB8FE007F40C8 /* Build configuration list for PBXNativeTarget "kata-chalanges" */;
+			buildPhases = (
+				31D44DA1D4B307B4FDDC0CAE /* [CP] Check Pods Manifest.lock */,
+				25C4571D257BB8FB007F40C8 /* Sources */,
+				25C4571E257BB8FB007F40C8 /* Frameworks */,
+				25C4571F257BB8FB007F40C8 /* Resources */,
+				345CB3C2EDD0EAC998C02BAF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kata-chalanges";
+			productName = "kata-chalanges";
+			productReference = 25C45721257BB8FB007F40C8 /* kata-chalanges.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25C45736257BB8FE007F40C8 /* kata-chalangesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C4574E257BB8FE007F40C8 /* Build configuration list for PBXNativeTarget "kata-chalangesTests" */;
+			buildPhases = (
+				D1CFF6F2B6048C0B225D4DD8 /* [CP] Check Pods Manifest.lock */,
+				25C45733257BB8FE007F40C8 /* Sources */,
+				25C45734257BB8FE007F40C8 /* Frameworks */,
+				25C45735257BB8FE007F40C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25C45739257BB8FE007F40C8 /* PBXTargetDependency */,
+			);
+			name = "kata-chalangesTests";
+			productName = "kata-chalangesTests";
+			productReference = 25C45737257BB8FE007F40C8 /* kata-chalangesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25C45741257BB8FE007F40C8 /* kata-chalangesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C45751257BB8FE007F40C8 /* Build configuration list for PBXNativeTarget "kata-chalangesUITests" */;
+			buildPhases = (
+				5A11A2D26F578EBEFBC19B53 /* [CP] Check Pods Manifest.lock */,
+				25C4573E257BB8FE007F40C8 /* Sources */,
+				25C4573F257BB8FE007F40C8 /* Frameworks */,
+				25C45740257BB8FE007F40C8 /* Resources */,
+				5E27FBCECB2E934425C6898D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25C45744257BB8FE007F40C8 /* PBXTargetDependency */,
+			);
+			name = "kata-chalangesUITests";
+			productName = "kata-chalangesUITests";
+			productReference = 25C45742257BB8FE007F40C8 /* kata-chalangesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25C45719257BB8FB007F40C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					25C45720257BB8FB007F40C8 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					25C45736257BB8FE007F40C8 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+						TestTargetID = 25C45720257BB8FB007F40C8;
+					};
+					25C45741257BB8FE007F40C8 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 25C45720257BB8FB007F40C8;
+					};
+				};
+			};
+			buildConfigurationList = 25C4571C257BB8FB007F40C8 /* Build configuration list for PBXProject "kata-chalanges" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25C45718257BB8FB007F40C8;
+			productRefGroup = 25C45722257BB8FB007F40C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25C45720257BB8FB007F40C8 /* kata-chalanges */,
+				25C45736257BB8FE007F40C8 /* kata-chalangesTests */,
+				25C45741257BB8FE007F40C8 /* kata-chalangesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25C4571F257BB8FB007F40C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C45731257BB8FE007F40C8 /* LaunchScreen.storyboard in Resources */,
+				25C4572E257BB8FE007F40C8 /* Assets.xcassets in Resources */,
+				25C4572C257BB8FB007F40C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C45735257BB8FE007F40C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C45740257BB8FE007F40C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31D44DA1D4B307B4FDDC0CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kata-chalanges-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		345CB3C2EDD0EAC998C02BAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kata-chalanges/Pods-kata-chalanges-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kata-chalanges/Pods-kata-chalanges-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kata-chalanges/Pods-kata-chalanges-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A11A2D26F578EBEFBC19B53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kata-chalanges-kata-chalangesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E27FBCECB2E934425C6898D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kata-chalanges-kata-chalangesUITests/Pods-kata-chalanges-kata-chalangesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kata-chalanges-kata-chalangesUITests/Pods-kata-chalanges-kata-chalangesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kata-chalanges-kata-chalangesUITests/Pods-kata-chalanges-kata-chalangesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1CFF6F2B6048C0B225D4DD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kata-chalangesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25C4571D257BB8FB007F40C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25ADBB26257BD81000A8B080 /* SenderService.swift in Sources */,
+				25C45729257BB8FB007F40C8 /* ViewController.swift in Sources */,
+				25C45725257BB8FB007F40C8 /* AppDelegate.swift in Sources */,
+				25C45727257BB8FB007F40C8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C45733257BB8FE007F40C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A12AE8257BE345008C3AD4 /* GreeterServiceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C4573E257BB8FE007F40C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C45747257BB8FE007F40C8 /* kata_chalangesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25C45739257BB8FE007F40C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25C45720257BB8FB007F40C8 /* kata-chalanges */;
+			targetProxy = 25C45738257BB8FE007F40C8 /* PBXContainerItemProxy */;
+		};
+		25C45744257BB8FE007F40C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25C45720257BB8FB007F40C8 /* kata-chalanges */;
+			targetProxy = 25C45743257BB8FE007F40C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25C4572A257BB8FB007F40C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25C4572B257BB8FB007F40C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25C4572F257BB8FE007F40C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25C45730257BB8FE007F40C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25C45749257BB8FE007F40C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25C4574A257BB8FE007F40C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25C4574C257BB8FE007F40C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74ECC1B9BB5F05DC4AB02A3 /* Pods-kata-chalanges.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "kata-chalanges/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kata-chalanges";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25C4574D257BB8FE007F40C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515C811D989AF406CDD43C0E /* Pods-kata-chalanges.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "kata-chalanges/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kata-chalanges";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25C4574F257BB8FE007F40C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2449E6EE3D4E14A4D9D5275D /* Pods-kata-chalangesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "kata-chalangesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kata-chalangesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kata-chalangesTests/Greteer/kata-chalangesTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kata-chalanges.app/kata-chalanges";
+			};
+			name = Debug;
+		};
+		25C45750257BB8FE007F40C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9138F072AA925787C81B25 /* Pods-kata-chalangesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "kata-chalangesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kata-chalangesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kata-chalangesTests/Greteer/kata-chalangesTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kata-chalanges.app/kata-chalanges";
+			};
+			name = Release;
+		};
+		25C45752257BB8FE007F40C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF3483DA321D147C1214CAF0 /* Pods-kata-chalanges-kata-chalangesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "kata-chalangesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kata-chalangesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kata-chalanges";
+			};
+			name = Debug;
+		};
+		25C45753257BB8FE007F40C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D137138302BBC7FD92B0F96 /* Pods-kata-chalanges-kata-chalangesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "kata-chalangesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kata-chalangesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kata-chalanges";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25C4571C257BB8FB007F40C8 /* Build configuration list for PBXProject "kata-chalanges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C45749257BB8FE007F40C8 /* Debug */,
+				25C4574A257BB8FE007F40C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25C4574B257BB8FE007F40C8 /* Build configuration list for PBXNativeTarget "kata-chalanges" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C4574C257BB8FE007F40C8 /* Debug */,
+				25C4574D257BB8FE007F40C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25C4574E257BB8FE007F40C8 /* Build configuration list for PBXNativeTarget "kata-chalangesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C4574F257BB8FE007F40C8 /* Debug */,
+				25C45750257BB8FE007F40C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25C45751257BB8FE007F40C8 /* Build configuration list for PBXNativeTarget "kata-chalangesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C45752257BB8FE007F40C8 /* Debug */,
+				25C45753257BB8FE007F40C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25C45719257BB8FB007F40C8 /* Project object */;
+}
