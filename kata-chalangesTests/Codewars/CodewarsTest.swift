@@ -44,10 +44,10 @@ class CodewarsTest: QuickSpec {
             
             context("greeting") {
                 it("Daniel Daniel") {
-                    expect(self.sup.greeting(gues: "Daniel", boss: "Daniel")).to(equal("Hello boss"))
+                    expect(self.sup.greeting(guest: "Daniel", boss: "Daniel")).to(equal("Hello boss"))
                 }
                 it("Daniel Daniel") {
-                    expect(self.sup.greeting(gues: "Daniel", boss: "Mary")).to(equal("Hello quest"))
+                    expect(self.sup.greeting(guest: "Daniel", boss: "Mary")).to(equal("Hello quest"))
                 }
             }
         }

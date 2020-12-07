@@ -8,28 +8,74 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    lazy var textLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+    lazy var textLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 300, height: 100))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(textLabel)
         
-        DispatchQueue.global(qos: .utility).async { [weak self] in
-          guard let self = self else { return }
-          // Perform your work here
-          // ...
-          // Switch back to the main queue to
-          // update your UI
-          DispatchQueue.main.async {
-            self.textLabel.text = "New articles available!"
-          }
-        }
-        
-        
-
-        // Do any additional setup after loading the view.
+        startDispatchGroupNotify()
     }
-
-
+    
+    func startDispatchGroupNotify() {
+        let group = DispatchGroup()
+        let queue = DispatchQueue.global(qos: .userInitiated)
+        
+        queue.async(group: group, execute: DispatchWorkItem(block: {
+            print("group 1")
+        }))
+        queue.async(group: group, execute: DispatchWorkItem(block: {
+            for _ in 0...1000 {}
+            queue.async(group: group, execute: DispatchWorkItem(block: {
+                for _ in 0...5000 {}
+                print(1)
+            }))
+        }))
+        
+        group.notify(queue: DispatchQueue.main) {
+            self.textLabel.text = "All jobs have completed"
+            self.startDispatchGroupWait()
+        }
+    }
+    
+    func startDispatchGroupWait() {
+        let group = DispatchGroup()
+        let queue = DispatchQueue.global(qos: .userInitiated)
+        
+        queue.async(group: group, execute: DispatchWorkItem(block: {
+            print("group wait 1")
+        }))
+        queue.async(group: group, execute: DispatchWorkItem(block: {
+            for _ in 0...1000 {}
+            queue.async(group: group, execute: DispatchWorkItem(block: {
+                for _ in 0...5000 {}
+                print(1)
+            }))
+        }))
+        
+        if (group.wait(timeout: .now() + 5) == .success) {
+            self.textLabel.text = "All jobs timeout"
+            startSleep()
+        }
+    }
+    
+    func startSleep() {
+        let group = DispatchGroup()
+        let queue = DispatchQueue.global(qos: .userInitiated)
+        queue.async(group: group) {
+          print("Start job 1")
+          Thread.sleep(until: Date().addingTimeInterval(3))
+          print("End job 1")
+        }
+        queue.async(group: group) {
+          print("Start job 2")
+          Thread.sleep(until: Date().addingTimeInterval(2))
+          print("End job 2")
+        }
+    }
+    
+    deinit {
+        print("viewController deinit")
+    }
+    
 }
-
