@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
     lazy var textLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 300, height: 100))
     
@@ -16,6 +18,9 @@ class ViewController: UIViewController {
         
         startDispatchGroupNotify()
     }
+
+    // MARK: GCD
+    
     
     func startDispatchGroupNotify() {
         let group = DispatchGroup()
@@ -71,6 +76,25 @@ class ViewController: UIViewController {
           print("Start job 2")
           Thread.sleep(until: Date().addingTimeInterval(2))
           print("End job 2")
+            self.threads()
+        }
+    }
+    
+    func threads() {
+        DispatchQueue.global(qos: .background).sync {
+            print(1)
+            
+            DispatchQueue.global(qos: .background).async {
+                print(2)
+            }
+            
+            DispatchQueue.global(qos: .background).async {
+                for _ in 0...1000 {}
+            }
+        }
+        
+        DispatchQueue.global(qos: .background).sync {
+            print(3)
         }
     }
     

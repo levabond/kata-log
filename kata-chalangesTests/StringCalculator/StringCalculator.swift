@@ -17,6 +17,30 @@ class StringCalculatorTest: QuickSpec {
     override func spec() {
         super.spec()
         
+        describe("duplicate") {
+            beforeEach {
+                self.sup = StringCalculator()
+            }
+            
+            context("Encoder") {
+                it("din") {
+                    expect(self.sup.duplicateEncoder("din")).to(equal("((("))
+                }
+                
+                it("recede") {
+                    expect(self.sup.duplicateEncoder("recede")).to(equal("()()()"))
+                }
+                
+                it("Success") {
+                    expect(self.sup.duplicateEncoder("Success")).to(equal(")())())"))
+                }
+                
+                it("(( @") {
+                    expect(self.sup.duplicateEncoder("(( @")).to(equal("))(("))
+                }
+            }
+        }
+        
         describe("method add given a delimited string") {
             beforeEach {
                 self.sup = StringCalculator()

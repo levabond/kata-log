@@ -14,4 +14,10 @@ class StringCalculator {
             $0 + (Int(String($1)) ?? 0)
         }
     }
+    
+    func duplicateEncoder(_ string: String) -> String {
+        return string.map { char in
+            string.filter({ char.lowercased() == $0.lowercased() }).count == 1 ? "(" : ")"
+        }.joined()
+    }
 }
