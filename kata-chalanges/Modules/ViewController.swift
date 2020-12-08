@@ -8,6 +8,9 @@
 import UIKit
 
 
+class Object: NSObject {
+    
+}
 
 class ViewController: UIViewController {
     lazy var textLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 300, height: 100))
@@ -20,6 +23,13 @@ class ViewController: UIViewController {
     }
 
     // MARK: GCD
+    
+    func removeChildController(_ child: UIViewController) {
+        child.willMove(toParent: nil)
+        child.view.removeFromSuperview()
+        child.removeFromParent()
+        child.didMove(toParent: nil)
+    }
     
     
     func startDispatchGroupNotify() {
@@ -95,6 +105,9 @@ class ViewController: UIViewController {
         
         DispatchQueue.global(qos: .background).sync {
             print(3)
+            
+            let fibonacciSumm = Set(arrayLiteral: 1,1,2,3,5,8,13).reduce(0, +)
+            print(fibonacciSumm)
         }
     }
     

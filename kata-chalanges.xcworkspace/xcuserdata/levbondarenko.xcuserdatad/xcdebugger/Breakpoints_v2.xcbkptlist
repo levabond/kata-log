@@ -252,8 +252,8 @@
             filePath = "kata-chalanges/Modules/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "deinit"
             landmarkType = "7">
          </BreakpointContent>
@@ -268,8 +268,8 @@
             filePath = "kata-chalanges/Modules/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "startDispatchGroupWait()"
             landmarkType = "7">
          </BreakpointContent>
@@ -284,9 +284,180 @@
             filePath = "kata-chalanges/Modules/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "startDispatchGroupWait()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7E1D0F3-8E49-47E4-8620-0957317C5875"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kata-chalangesTests/PrimeFactors/PrimeFactorsTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "F7E1D0F3-8E49-47E4-8620-0957317C5875 - 9a3de3b7abe0c7b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kata_chalangesTests.PrimeFactorsTest.__deallocating_deinit"
+                  moduleName = "kata-chalangesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/levbondarenko/Documents/swift/kata-log/kata-chalangesTests/PrimeFactors/PrimeFactorsTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F7E1D0F3-8E49-47E4-8620-0957317C5875 - 8c8f4a496e7ca315"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kata_chalangesTests.PrimeFactorsTest.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; kata_chalangesTests.PrimeFactorsTest"
+                  moduleName = "kata-chalangesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/levbondarenko/Documents/swift/kata-log/kata-chalangesTests/PrimeFactors/PrimeFactorsTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "F7E1D0F3-8E49-47E4-8620-0957317C5875 - b52cc49eca84beaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kata_chalangesTests.PrimeFactorsTest.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; kata_chalangesTests.PrimeFactorsTest"
+                  moduleName = "kata-chalangesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/levbondarenko/Documents/swift/kata-log/kata-chalangesTests/PrimeFactors/PrimeFactorsTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  uuid = "F7E1D0F3-8E49-47E4-8620-0957317C5875 - 823016095465ef6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kata_chalangesTests.PrimeFactorsTest.__allocating_init(selector: ObjectiveC.Selector) -&gt; kata_chalangesTests.PrimeFactorsTest"
+                  moduleName = "kata-chalangesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/levbondarenko/Documents/swift/kata-log/kata-chalangesTests/PrimeFactors/PrimeFactorsTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "F7E1D0F3-8E49-47E4-8620-0957317C5875 - cb7130fe0aaad48f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kata_chalangesTests.PrimeFactorsTest.init(selector: ObjectiveC.Selector) -&gt; kata_chalangesTests.PrimeFactorsTest"
+                  moduleName = "kata-chalangesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/levbondarenko/Documents/swift/kata-log/kata-chalangesTests/PrimeFactors/PrimeFactorsTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  uuid = "F7E1D0F3-8E49-47E4-8620-0957317C5875 - 1a11f36ebc9629c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kata_chalangesTests.PrimeFactorsTest.__allocating_init() -&gt; kata_chalangesTests.PrimeFactorsTest"
+                  moduleName = "kata-chalangesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/levbondarenko/Documents/swift/kata-log/kata-chalangesTests/PrimeFactors/PrimeFactorsTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "F7E1D0F3-8E49-47E4-8620-0957317C5875 - 7b6181f4e87b4afa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kata_chalangesTests.PrimeFactorsTest.init() -&gt; kata_chalangesTests.PrimeFactorsTest"
+                  moduleName = "kata-chalangesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/levbondarenko/Documents/swift/kata-log/kata-chalangesTests/PrimeFactors/PrimeFactorsTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3E0D718-70B1-487C-901D-97336E95A1DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kata-chalanges/Services/TDD/PrimeFactorsService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "generate(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76A6FC9C-1F36-45BD-A815-07E3461EC7F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kata-chalanges/Services/TDD/PrimeFactorsService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "prepareArray(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C32757B2-E9F4-4155-AA99-9A0A1C667337"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kata-chalanges/Services/TDD/PrimeFactorsService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "prepareArray(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
