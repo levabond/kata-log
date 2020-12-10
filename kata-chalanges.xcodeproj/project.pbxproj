@@ -10,6 +10,8 @@
 		0F6CBAF310EEB265F9B74D70 /* Pods_kata_chalangesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FB488942350DF0560DD1E1 /* Pods_kata_chalangesTests.framework */; };
 		2515551F257FFFFC004FA995 /* PrimeFactorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515551E257FFFFC004FA995 /* PrimeFactorsService.swift */; };
 		2515552525800051004FA995 /* PrimeFactorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515552425800051004FA995 /* PrimeFactorsTest.swift */; };
+		2515567C25815875004FA995 /* BowlingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515567B25815875004FA995 /* BowlingService.swift */; };
+		2515568225815888004FA995 /* BowlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515568125815888004FA995 /* BowlingTests.swift */; };
 		25A12AE8257BE345008C3AD4 /* GreeterServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A12AE7257BE345008C3AD4 /* GreeterServiceTest.swift */; };
 		25A12AFA257C0503008C3AD4 /* CodewarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A12AF9257C0503008C3AD4 /* CodewarsService.swift */; };
 		25A12B00257C052E008C3AD4 /* CodewarsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A12AFF257C052E008C3AD4 /* CodewarsTest.swift */; };
@@ -50,6 +52,8 @@
 		2449E6EE3D4E14A4D9D5275D /* Pods-kata-chalangesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kata-chalangesTests.debug.xcconfig"; path = "Target Support Files/Pods-kata-chalangesTests/Pods-kata-chalangesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2515551E257FFFFC004FA995 /* PrimeFactorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsService.swift; sourceTree = "<group>"; };
 		2515552425800051004FA995 /* PrimeFactorsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsTest.swift; sourceTree = "<group>"; };
+		2515567B25815875004FA995 /* BowlingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingService.swift; sourceTree = "<group>"; };
+		2515568125815888004FA995 /* BowlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingTests.swift; sourceTree = "<group>"; };
 		25A12AE6257BE345008C3AD4 /* kata-chalangesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kata-chalangesTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		25A12AE7257BE345008C3AD4 /* GreeterServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreeterServiceTest.swift; sourceTree = "<group>"; };
 		25A12AF9257C0503008C3AD4 /* CodewarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodewarsService.swift; sourceTree = "<group>"; };
@@ -129,6 +133,14 @@
 			path = PrimeFactors;
 			sourceTree = "<group>";
 		};
+		251556802581587A004FA995 /* BowlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				2515568125815888004FA995 /* BowlingTests.swift */,
+			);
+			path = BowlingTests;
+			sourceTree = "<group>";
+		};
 		25A12AE2257BE327008C3AD4 /* Greteer */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +172,7 @@
 				25ADBB25257BD81000A8B080 /* SenderService.swift */,
 				25A12B35257CB96E008C3AD4 /* StringCalculator.swift */,
 				2515551E257FFFFC004FA995 /* PrimeFactorsService.swift */,
+				2515567B25815875004FA995 /* BowlingService.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -227,6 +240,7 @@
 		25C4573A257BB8FE007F40C8 /* kata-chalangesTests */ = {
 			isa = PBXGroup;
 			children = (
+				251556802581587A004FA995 /* BowlingTests */,
 				251555232580003E004FA995 /* PrimeFactors */,
 				25A12B40257CBA73008C3AD4 /* StringCalculator */,
 				25A12AFE257C051F008C3AD4 /* Codewars */,
@@ -527,6 +541,7 @@
 				25A12AFA257C0503008C3AD4 /* CodewarsService.swift in Sources */,
 				2515551F257FFFFC004FA995 /* PrimeFactorsService.swift in Sources */,
 				25C45725257BB8FB007F40C8 /* AppDelegate.swift in Sources */,
+				2515567C25815875004FA995 /* BowlingService.swift in Sources */,
 				25C45727257BB8FB007F40C8 /* SceneDelegate.swift in Sources */,
 				25A12B8B257D3AFB008C3AD4 /* Errors.swift in Sources */,
 			);
@@ -538,6 +553,7 @@
 			files = (
 				2515552525800051004FA995 /* PrimeFactorsTest.swift in Sources */,
 				25A12B42257CBA82008C3AD4 /* StringCalculator.swift in Sources */,
+				2515568225815888004FA995 /* BowlingTests.swift in Sources */,
 				25A12AE8257BE345008C3AD4 /* GreeterServiceTest.swift in Sources */,
 				25A12B00257C052E008C3AD4 /* CodewarsTest.swift in Sources */,
 			);
