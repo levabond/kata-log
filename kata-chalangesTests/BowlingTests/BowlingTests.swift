@@ -11,6 +11,6 @@ import Quick
 
 class BowlingTest: QuickSpec {
     override func spec() {
-        <#code#>
+        
     }
 }

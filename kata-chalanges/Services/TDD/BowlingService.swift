@@ -12,7 +12,6 @@ class BowlingService {
     
     func roll(pins: [Int]) {
         rolls + pins
-        Double
     }
     
     func getScore(){
