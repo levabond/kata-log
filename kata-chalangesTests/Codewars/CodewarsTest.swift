@@ -51,5 +51,45 @@ class CodewarsTest: QuickSpec {
                 }
             }
         }
+        
+        describe("Find the nth Digit of a Number") {
+            beforeEach {
+                self.sup = CodewarsService()
+            }
+            
+//            findDigit(5673, 4)     returns 5
+//            findDigit(129, 2)      returns 2
+//            findDigit(-2825, 3)    returns 8
+//            findDigit(-456, 4)     returns 0
+//            findDigit(0, 20)       returns 0
+//            findDigit(65, 0)       returns -1
+//            findDigit(24, -8)      returns -1
+
+            context("return the nth digit of num (counting from right to left).") {
+                it("5673, 4") {
+                    expect(self.sup.findDigit(5673, 4)).to(equal(5))
+                }
+                
+                it("123, 2") {
+                    expect(self.sup.findDigit(5673, 4)).to(equal(5))
+                }
+
+                it("-2825, 3") {
+                    expect(self.sup.findDigit(-2825, 3)).to(equal(8))
+                }
+
+                it("-456, 4") {
+                    expect(self.sup.findDigit(-456, 4)).to(equal(0))
+                }
+                
+                it("0, 20") {
+                    expect(self.sup.findDigit(0, 20)).to(equal(0))
+                }
+                
+                it("65, 0") {
+                    expect(self.sup.findDigit(65, 0)).to(equal(-1))
+                }
+            }
+        }
     }
 }

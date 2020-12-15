@@ -44,4 +44,36 @@ class CodewarsService {
     func greeting(guest: String, boss: String) -> String {
         guest == boss ? "Hello boss" : "Hello quest"
     }
+    
+    
+//    Complete the function that takes two numbers as input, num and nth and return the nth digit of num (counting from right to left).
+    
+//    Note
+//    If num is negative, ignore its sign and treat it as a positive value
+//    If nth is not positive, return -1
+//    Keep in mind that 42 = 00042. This means that findDigit(42, 5) would return 0
+    
+    func findDigit(_ num:Int, _ nth: Int) -> Int {
+      // Go.
+        let positiveNum = num < 0 ? num * -1 : num
+        if nth <= 0 {
+            return -1
+        }
+        
+        let reservedStrNum = Array(String(String(positiveNum).reversed()))
+           
+        
+        if nth > reservedStrNum.count  {
+            return 0
+        }
+        
+        for item in 0...reservedStrNum.count {
+            if item == nth {
+                return reservedStrNum[item - 1].wholeNumberValue ?? 0
+            }
+        }
+        
+        return 0
+    }
+
 }
