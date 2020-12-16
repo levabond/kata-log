@@ -7,4 +7,6 @@ Kata chalange
 - https://github.com/wix/tdd-katas
 
 также небольшие эксперименты с многопоточностью
-Использование coredata
+Utils:
+- coredata
+- AsyncDisplayKit
