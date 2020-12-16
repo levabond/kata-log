@@ -6,7 +6,7 @@ target 'kata-chalanges' do
   use_frameworks!
 
   # Pods for kata-chalanges
-
+    pod "Texture"
     pod 'Quick'
     pod 'Nimble'
 

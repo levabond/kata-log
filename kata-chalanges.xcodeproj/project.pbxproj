@@ -29,7 +29,6 @@
 		25D4523B2582993600DC74DB /* FizzBuzzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4523A2582993600DC74DB /* FizzBuzzService.swift */; };
 		25D452412582997800DC74DB /* FizzBuzzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D452402582997800DC74DB /* FizzBuzzTest.swift */; };
 		2DFC659571A287888F5B70A2 /* Pods_kata_chalanges_kata_chalangesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9088F5C56B783A3E3BEF22F9 /* Pods_kata_chalanges_kata_chalangesUITests.framework */; };
-		8CF3FD53A393687350B7DD7E /* Pods_kata_chalanges.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40B3B1FEE22B215292C1158 /* Pods_kata_chalanges.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF3FD53A393687350B7DD7E /* Pods_kata_chalanges.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,7 +755,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kata-chalanges";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -776,7 +774,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kata-chalanges";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

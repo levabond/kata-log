@@ -6,22 +6,57 @@
 //
 
 import UIKit
-
+import AsyncDisplayKit
 
 class Object: NSObject {
     
 }
 
-class ViewController: UIViewController {
-    lazy var textLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 300, height: 100))
+class ViewController: ASDKViewController<ASDisplayNode>, ASTableDataSource, ASTableDelegate {
+    var tableNode: ASTableNode {
+        return node as! ASTableNode
+    }
+    
+    override init() {
+        super.init(node: ASTableNode())
+        tableNode.delegate = self
+        tableNode.dataSource = self
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(textLabel)
+        
+        
+        
         
         startDispatchGroupNotify()
     }
-
+    
+    func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
+        // Should read the row count directly from table view but
+        // https://github.com/facebook/AsyncDisplayKit/issues/1159
+        return {
+              let node = ASTextCellNode()
+              node.text = String(format: "[%ld.%ld] says hello!", indexPath.section, indexPath.row)
+              return node
+            }
+    }
+    
+    func numberOfSections(in tableNode: ASTableNode) -> Int {
+        return 1
+    }
+    
+    func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
+        
+        return 2
+    }
+    
+    
+    
     // MARK: GCD
     
     func removeChildController(_ child: UIViewController) {
@@ -48,7 +83,6 @@ class ViewController: UIViewController {
         }))
         
         group.notify(queue: DispatchQueue.main) {
-            self.textLabel.text = "All jobs have completed"
             self.startDispatchGroupWait()
         }
     }
@@ -69,7 +103,7 @@ class ViewController: UIViewController {
         }))
         
         if (group.wait(timeout: .now() + 5) == .success) {
-            self.textLabel.text = "All jobs timeout"
+//            self.textLabel.text = "All jobs timeout"
             startSleep()
         }
     }
@@ -78,14 +112,14 @@ class ViewController: UIViewController {
         let group = DispatchGroup()
         let queue = DispatchQueue.global(qos: .userInitiated)
         queue.async(group: group) {
-          print("Start job 1")
-          Thread.sleep(until: Date().addingTimeInterval(3))
-          print("End job 1")
+            print("Start job 1")
+            Thread.sleep(until: Date().addingTimeInterval(3))
+            print("End job 1")
         }
         queue.async(group: group) {
-          print("Start job 2")
-          Thread.sleep(until: Date().addingTimeInterval(2))
-          print("End job 2")
+            print("Start job 2")
+            Thread.sleep(until: Date().addingTimeInterval(2))
+            print("End job 2")
             self.threads()
         }
     }
