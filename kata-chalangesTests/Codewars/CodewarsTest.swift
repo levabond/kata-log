@@ -56,14 +56,6 @@ class CodewarsTest: QuickSpec {
             beforeEach {
                 self.sup = CodewarsService()
             }
-            
-//            findDigit(5673, 4)     returns 5
-//            findDigit(129, 2)      returns 2
-//            findDigit(-2825, 3)    returns 8
-//            findDigit(-456, 4)     returns 0
-//            findDigit(0, 20)       returns 0
-//            findDigit(65, 0)       returns -1
-//            findDigit(24, -8)      returns -1
 
             context("return the nth digit of num (counting from right to left).") {
                 it("5673, 4") {
@@ -88,6 +80,18 @@ class CodewarsTest: QuickSpec {
                 
                 it("65, 0") {
                     expect(self.sup.findDigit(65, 0)).to(equal(-1))
+                }
+            }
+        }
+        
+        describe("returns its multiplicative persistence, which is the number of times you must multiply the digits") {
+            beforeEach {
+                self.sup = CodewarsService()
+            }
+
+            context("in num until you reach a single digit.") {
+                it("(for: 39) === 3") {
+                    expect(self.sup.persistance(for: 39)).to(equal(3))
                 }
             }
         }

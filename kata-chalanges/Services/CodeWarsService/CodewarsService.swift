@@ -32,36 +32,36 @@ class CodewarsService {
         return elements.values.filter { $0 > 1 }.count
     }
     
-//    Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
-//    Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
-//
-//    Use conditionals to return the proper message:
-//
-//    case                  return
-//    name equals owner     'Hello boss'
-//    otherwise             'Hello guest'
+    //    Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+    //    Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+    //
+    //    Use conditionals to return the proper message:
+    //
+    //    case                  return
+    //    name equals owner     'Hello boss'
+    //    otherwise             'Hello guest'
     
     func greeting(guest: String, boss: String) -> String {
         guest == boss ? "Hello boss" : "Hello quest"
     }
     
     
-//    Complete the function that takes two numbers as input, num and nth and return the nth digit of num (counting from right to left).
+    //    Complete the function that takes two numbers as input, num and nth and return the nth digit of num (counting from right to left).
     
-//    Note
-//    If num is negative, ignore its sign and treat it as a positive value
-//    If nth is not positive, return -1
-//    Keep in mind that 42 = 00042. This means that findDigit(42, 5) would return 0
+    //    Note
+    //    If num is negative, ignore its sign and treat it as a positive value
+    //    If nth is not positive, return -1
+    //    Keep in mind that 42 = 00042. This means that findDigit(42, 5) would return 0
     
     func findDigit(_ num:Int, _ nth: Int) -> Int {
-      // Go.
+        // Go.
         let positiveNum = num < 0 ? num * -1 : num
         if nth <= 0 {
             return -1
         }
         
         let reservedStrNum = Array(String(String(positiveNum).reversed()))
-           
+        
         
         if nth > reservedStrNum.count  {
             return 0
@@ -75,5 +75,17 @@ class CodewarsService {
         
         return 0
     }
-
+    
+    //    Description:
+    //    Write a function, persistence, that takes in a positive parameter num and returns
+    //    its multiplicative persistence, which is the number of times you must multiply the digits
+    //    in num until you reach a single digit.
+    // https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/
+    
+    
+    func persistance(for num: Int) -> Int {
+        let digits: [Int] = String(num).compactMap { Int(String($0)) }
+        
+        return digits.count == 1 ? 0 : 1 + persistance(for: digits.reduce(1, *))
+    }
 }
