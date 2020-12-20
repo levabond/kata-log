@@ -8,13 +8,13 @@
 import Foundation
 
 class BowlingService {
-    var rolls: [Int] = []
+    var score: Int = 0
     
-    func roll(pins: [Int]) {
-        rolls + pins
+    func roll(pins: Int) {
+        self.score + pins
     }
     
-    func getScore(){
-        
+    func getScore() -> Int {
+        score
     }
 }
