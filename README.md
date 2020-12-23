@@ -8,5 +8,5 @@ Kata chalange
 
 также небольшие эксперименты с многопоточностью
 Utils:
-- coredata
+- Core Data
 - AsyncDisplayKit
