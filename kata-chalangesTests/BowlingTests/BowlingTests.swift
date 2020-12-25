@@ -20,8 +20,7 @@ class BowlingTest: QuickSpec {
         describe("Bowling Game") {
             context("get game") {
                 it("score") {
-//                    expect(self.sup.persistance(for: 39)).to(equal(3))
-                    expect(self.sup.getScore()).to(equal(0))
+//                    expect(self.sup.getScore()).to(equal(0))
                 }
             }
         }
