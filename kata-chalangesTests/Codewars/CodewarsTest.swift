@@ -95,5 +95,28 @@ class CodewarsTest: QuickSpec {
                 }
             }
         }
+        
+//        XCTAssertEqual(findSum(5), 8)
+//                XCTAssertEqual(findSum(10), 33)
+//                XCTAssertEqual(findSum(100), 2418)
+//                XCTAssertEqual(findSum(1000), 234168)
+        
+        describe("returns summ") {
+            beforeEach {
+                self.sup = CodewarsService()
+            }
+
+            context("") {
+                it("5 -> 8") {
+                    expect(self.sup.findSum(5)).to(equal(8))
+                }
+                it("100 -> 2418") {
+                    expect(self.sup.findSum(100)).to(equal(2418))
+                }
+                it("5 -> 8") {
+                    expect(self.sup.findSum(1000)).to(equal(234168))
+                }
+            }
+        }
     }
 }
