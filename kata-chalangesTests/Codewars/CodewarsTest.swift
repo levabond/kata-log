@@ -96,11 +96,6 @@ class CodewarsTest: QuickSpec {
             }
         }
         
-//        XCTAssertEqual(findSum(5), 8)
-//                XCTAssertEqual(findSum(10), 33)
-//                XCTAssertEqual(findSum(100), 2418)
-//                XCTAssertEqual(findSum(1000), 234168)
-        
         describe("returns summ") {
             beforeEach {
                 self.sup = CodewarsService()
